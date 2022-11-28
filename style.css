@@ -15,3 +15,7 @@
   height: 500px;
   background-image: url("./jar-logo-web.svg");
 }
+
+#index {
+  background-color: #D5E5FF;
+}
