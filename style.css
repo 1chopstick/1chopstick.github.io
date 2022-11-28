@@ -9,3 +9,9 @@
   width: 100%;
   /* The width is the width of the web page */
 }
+
+#logo {
+  width: 400px;
+  height: 500px;
+  background-image: url("./jar-logo-web.svg");
+}
