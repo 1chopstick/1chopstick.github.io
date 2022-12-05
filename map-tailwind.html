@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Resource Finder</title>
@@ -12,13 +13,14 @@
     process.env.GOOGLE_MAPS_API_KEY =
       "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg";
   </script>
-  <!-- playground-hide-end -->  
+  <!-- playground-hide-end -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css" rel="stylesheet" type="text/css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="./info-window.js"></script>
 </head>
+
 <body class="p-2">
   <h1 class="text-3xl font-bold p2">Resource Finder</h1>
   <div class="grid grid-cols-[30%_70%] w-full h-full gap-3">
@@ -27,187 +29,192 @@
 
       <!-- Search Box -->
       <div class="flex justify-center">
-        <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+        <input type="search"
+          class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+          placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
         <button class="btn">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-          </svg>                          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
         </button>
       </div>
 
-      <!-- Filters -->
-      Keywords
-      <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-      
-      <div class="flex justify-center w-full mt-3">
-        <div class="bg-white rounded-lg border border-gray-200 w-full text-gray-900">
-
-          <div class="px-6 py-2 border-b border-gray-200 w-full rounded-t-lg hover:bg-gray-100 hover:text-gray-600">
-            <a href="#" class="block w-full">
-              <label class="flex justify-between">
-                <div class="flex">
-                    <span class="material-icons md-18">child_care</span>
-                    <small class="px-2">Offers instructor-led programs for preschoolers</small>
-                </div>
-                <input class="checkbox checkbox-sm" type="checkbox" value="">
-              </label>
-            </a>
-          </div>
-
-          <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
-            <a href="#" class="block w-full">
-              <label class="flex justify-between">
-                <div class="flex">
-                    <span class="material-icons md-18">escalator_warning</span>
-                    <small class="px-2">Offers parent-led playgroups for elementary age children</small>
-                </div>
-                <input class="checkbox checkbox-sm" type="checkbox" value="">
-              </label>   
-            </a>
-          </div>      
-
-          <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
-            <a href="#" class="block w-full">
-              <label class="flex justify-between">
-                <div class="flex">
-                    <span class="material-icons md-18">face</span>
-                    <small class="px-2">Offers language classes for the K-12 age group</small>
-                </div>
-                <input class="checkbox checkbox-sm" type="checkbox" value="">
-              </label>   
-            </a>
-          </div>      
-
-          <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
-            <a href="#" class="block w-full">
-              <label class="flex justify-between">
-                <div class="flex">
-                    <span class="material-icons md-18">school</span>
-                    <small class="px-2">Offers college-level (accredited) language instruction</small>
-                </div>
-                <input class="checkbox checkbox-sm" type="checkbox" value="">
-              </label>   
-            </a>
-          </div>              
-          
-          <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
-            <a href="#" class="block w-full">
-              <label class="flex justify-between">
-                <div class="flex">
-                    <span class="material-icons md-18">groups</span>
-                    <small class="px-2">Offers non-credit classes for adults</small>
-                </div>
-                <input class="checkbox checkbox-sm" type="checkbox" value="">
-              </label>   
-            </a>
-          </div>      
-          
-          <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
-            <a href="#" class="block w-full">
-              <label class="flex justify-between">
-                <div class="flex">
-                    <span class="material-icons md-18">menu_book</span>
-                    <small class="px-2">Offers book/media sales</small>
-                </div>
-                <input class="checkbox checkbox-sm" type="checkbox" value="">
-              </label>   
-            </a>
-          </div>      
-          
-          <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
-            <a href="#" class="block w-full">
-              <label class="flex justify-between">
-                <div class="flex">
-                    <span class="material-icons md-18">brush</span>
-                    <small class="px-2">Offers hobby related events</small>
-                </div>
-                <input class="checkbox checkbox-sm" type="checkbox" value="">
-              </label>   
-            </a>
-          </div>      
-          
-          <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
-            <a href="#" class="block w-full">
-              <label class="flex justify-between">
-                <div class="flex">
-                    <span class="material-icons md-18">contact_support</span>
-                    <small class="px-2">Offers periodic advice on Cantonese language learning</small>
-                </div>
-                <input class="checkbox checkbox-sm" type="checkbox" value="">
-              </label>   
-            </a>
-          </div>      
-          
-          <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
-            <a href="#" class="block w-full">
-              <label class="flex justify-between">
-                <div class="flex">
-                    <span class="material-icons md-18">forum</span>
-                    <small class="px-2">Offers social gatherings for adults in Cantonese</small>
-                </div>
-                <input class="checkbox checkbox-sm" type="checkbox" value="">
-              </label>   
-            </a>
-          </div>      
-          
-          <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
-            <a href="#" class="block w-full">
-              <label class="flex justify-between">
-                <div class="flex">
-                    <span class="material-icons md-18">theater_comedy</span>
-                    <small class="px-2">Offers other Cantonese-related cultural/community services</small>
-                </div>
-                <input class="checkbox checkbox-sm" type="checkbox" value="">
-              </label>   
-            </a>
-          </div>      
-          
-          <div class="px-6 py-2 w-full rounded-b-lg hover:bg-gray-100 hover:text-gray-600">
-            <a href="#" class="block w-full">
-              <label class="flex justify-between">
-                <div class="flex">
-                    <span class="material-icons md-18">shopping_cart</span>
-                    <small class="px-2">Offers Chinese heritage related goods and services</small>
-                </div>
-                <input class="checkbox checkbox-sm" type="checkbox" value="">
-              </label> 
-            </a>
-          </div>
-
-
-        </div>
-
-      </div>
-      
       <!-- Filter -->
-      <div class="flex justify-end w-full">
-      <div class="collapse">
-        <input type="checkbox" />         
-        <div class="collapse-title">
-          <small>Advanced Filters</small>
-        </div>
-        <div class="collapse-content"> 
-          <div class="bg-white rounded-lg border border-gray-200 w-full text-gray-900">
-            <div class="px-6 py-2 border-b border-gray-200 w-full rounded-t-lg hover:bg-gray-100 hover:text-gray-600">
-              <a href="#" class="block w-full">
-                <h5 class="font-medium leading-tight text-xl mt-0 mb-2">The first item blah blah alahdkd d</h5>
-              </a>
-            </div>
+      <div class="flex">
+        <div class="collapse w-full">
+          <input type="checkbox" class="p-0 min-h-0">
+          <div class="collapse-title flex justify-end p-0 min-h-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-11.25a.75.75 0 00-1.5 0v2.5h-2.5a.75.75 0 000 1.5h2.5v2.5a.75.75 0 001.5 0v-2.5h2.5a.75.75 0 000-1.5h-2.5v-2.5z"
+                clip-rule="evenodd" />
+            </svg>
+            <small>Advanced Filters</small>
+          </div>
+          <div class="collapse-content p-0">
+            Keywords
+            <input type="search"
+              class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              placeholder="" aria-label="Search" aria-describedby="button-addon2">
 
-            <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
-              <a href="#" class="block w-full">
-                <h5 class="font-medium leading-tight text-xl mt-0 mb-2">A third item</h5>
-              </a>
-            </div>            
+            <div class="flex justify-center w-full mt-3">
+
+              <div class="bg-white rounded-lg border border-gray-200 w-full text-gray-900">
+
+                <div
+                  class="px-6 py-2 border-b border-gray-200 w-full rounded-t-lg hover:bg-gray-100 hover:text-gray-600">
+                  <a href="#" class="block w-full">
+                    <label class="flex justify-between cursor-pointer">
+                      <div class="flex">
+                        <span class="material-icons md-18">child_care</span>
+                        <small class="px-2">Offers instructor-led programs for preschoolers</small>
+                      </div>
+                      <input class="checkbox checkbox-sm" type="checkbox" value="">
+                    </label>
+                  </a>
+                </div>
+
+
+                <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
+                  <a href="#" class="block w-full">
+                    <label class="flex justify-between cursor-pointer">
+                      <div class="flex">
+                        <span class="material-icons md-18">escalator_warning</span>
+                        <small class="px-2">Offers parent-led playgroups for elementary age children</small>
+                      </div>
+                      <input class="checkbox checkbox-sm" type="checkbox" value="">
+                    </label>
+                  </a>
+                </div>
+
+                <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
+                  <a href="#" class="block w-full">
+                    <label class="flex justify-between cursor-pointer">
+                      <div class="flex">
+                        <span class="material-icons md-18">face</span>
+                        <small class="px-2">Offers language classes for the K-12 age group</small>
+                      </div>
+                      <input class="checkbox checkbox-sm" type="checkbox" value="">
+                    </label>
+                  </a>
+                </div>
+
+                <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
+                  <a href="#" class="block w-full">
+                    <label class="flex justify-between cursor-pointer">
+                      <div class="flex">
+                        <span class="material-icons md-18">school</span>
+                        <small class="px-2">Offers college-level (accredited) language instruction</small>
+                      </div>
+                      <input class="checkbox checkbox-sm" type="checkbox" value="">
+                    </label>
+                  </a>
+                </div>
+
+                <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
+                  <a href="#" class="block w-full">
+                    <label class="flex justify-between cursor-pointer">
+                      <div class="flex">
+                        <span class="material-icons md-18">groups</span>
+                        <small class="px-2">Offers non-credit classes for adults</small>
+                      </div>
+                      <input class="checkbox checkbox-sm" type="checkbox" value="">
+                    </label>
+                  </a>
+                </div>
+
+                <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
+                  <a href="#" class="block w-full">
+                    <label class="flex justify-between cursor-pointer">
+                      <div class="flex">
+                        <span class="material-icons md-18">menu_book</span>
+                        <small class="px-2">Offers book/media sales</small>
+                      </div>
+                      <input class="checkbox checkbox-sm" type="checkbox" value="">
+                    </label>
+                  </a>
+                </div>
+
+                <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
+                  <a href="#" class="block w-full">
+                    <label class="flex justify-between cursor-pointer">
+                      <div class="flex">
+                        <span class="material-icons md-18">brush</span>
+                        <small class="px-2">Offers hobby related events</small>
+                      </div>
+                      <input class="checkbox checkbox-sm" type="checkbox" value="">
+                    </label>
+                  </a>
+                </div>
+
+                <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
+                  <a href="#" class="block w-full">
+                    <label class="flex justify-between cursor-pointer">
+                      <div class="flex">
+                        <span class="material-icons md-18">contact_support</span>
+                        <small class="px-2">Offers periodic advice on Cantonese language learning</small>
+                      </div>
+                      <input class="checkbox checkbox-sm" type="checkbox" value="">
+                    </label>
+                  </a>
+                </div>
+
+                <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
+                  <a href="#" class="block w-full">
+                    <label class="flex justify-between cursor-pointer">
+                      <div class="flex">
+                        <span class="material-icons md-18">forum</span>
+                        <small class="px-2">Offers social gatherings for adults in Cantonese</small>
+                      </div>
+                      <input class="checkbox checkbox-sm" type="checkbox" value="">
+                    </label>
+                  </a>
+                </div>
+
+                <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
+                  <a href="#" class="block w-full">
+                    <label class="flex justify-between cursor-pointer">
+                      <div class="flex">
+                        <span class="material-icons md-18">theater_comedy</span>
+                        <small class="px-2">Offers other Cantonese-related cultural/community services</small>
+                      </div>
+                      <input class="checkbox checkbox-sm" type="checkbox" value="">
+                    </label>
+                  </a>
+                </div>
+
+
+                <div class="px-6 py-2 w-full rounded-b-lg hover:bg-gray-100 hover:text-gray-600">
+                  <a href="#" class="block w-full">
+                    <label class="flex justify-between cursor-pointer">
+                      <div class="flex">
+                        <span class="material-icons md-18">shopping_cart</span>
+                        <small class="px-2">Offers Chinese heritage related goods and services</small>
+                      </div>
+                      <input class="checkbox checkbox-sm" type="checkbox" value="">
+                    </label>
+                  </a>
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="flex justify-end">
+              <button class="btn btn-sm gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z"
+                    clip-rule="evenodd" />
+                </svg>
+
+                Reset</button>
+            </div>
           </div>
         </div>
       </div>
-
-
-      </div>      
-
-          
- 
 
       <!-- Listings -->
       <div class="flex justify-center pt-3">
@@ -236,15 +243,15 @@
               <div class="flex">
                 <i class="bi bi-geo-alt-fill"></i>
                 <small class="pl-2">21370 Homestead Road, Cupertino, CA, 95014, USA</small>
-              </div>     
+              </div>
               <div class="flex">
                 <i class="bi bi-telephone-fill"></i>
                 <small class="pl-2">+1 408 839 7001</small>
-              </div>     
+              </div>
               <div class="flex">
                 <i class="bi bi-globe"></i>
                 <small class="pl-2">https://www.wvcls.org</small>
-              </div>              
+              </div>
               <div class="flex">
                 <i class="bi bi-envelope-fill"></i>
                 <small class="pl-2">wvcls.principal@yahoo.com</small>
@@ -254,8 +261,8 @@
                 <small class="px-2">Facebook</small>
                 <i class="bi bi-youtube"></i>
                 <small class="px-2">Youtube</small>
-              </div>  
-            </a>                           
+              </div>
+            </a>
           </div>
 
           <div class="px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-gray-600">
@@ -268,7 +275,7 @@
             <a href="#" class="block w-full">
               <h5 class="font-medium leading-tight text-xl mt-0 mb-2">A fourth item</h5>
             </a>
-          </div>          
+          </div>
 
           <div class="px-6 py-2 w-full rounded-b-lg hover:bg-gray-100 hover:text-gray-600">
             <a href="#" class="block w-full">
@@ -277,15 +284,18 @@
           </div>
 
         </div>
-      </div>      
-    
+      </div>
+
     </div>
 
+
+
     <!-- Map -->
-    <div class="pr-4">       
-        <div id="map" style="height: calc(100vh - 100px); width:100%"></div>
+    <div class="pr-4">
+      <div id="map" style="height: calc(100vh - 100px); width:100%"></div>
     </div>
   </div>
+
 
   <!-- 
     The `defer` attribute causes the callback to execute after the full HTML
@@ -295,7 +305,7 @@
   -->
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-    defer
-  ></script>  
+    defer></script>
 </body>
+
 </html>
